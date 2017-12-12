@@ -8,12 +8,14 @@
     <script>
         function initialize() {
             var myLatLng = { lat: 42.762480, lng: -83.283406 };
+
             var mapProp = {
                 center: myLatLng,
                 zoom: 15,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
             var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
             var marker = new google.maps.Marker({
                 position: myLatLng,
                 map: map,
